@@ -223,6 +223,11 @@ nav li{
     display: inline;
     margin: 20px;    
 }
+@media(max-width:460px){
+    nav li{
+        margin: 5px;
+    }
+}
 .menuLinks{
   color: white;  
   text-decoration: none;
