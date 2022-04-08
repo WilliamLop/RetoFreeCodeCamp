@@ -1,0 +1,103 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pagina Formulario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estiloForm.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav id="navbar">
+                <ul>
+                    <li><a class="menuLinks"  href="">Inicio</a></li>
+                    <li><a class="menuLinks" href="">Acerca de</a></li>
+                    <li><a class="menuLinks" href="">Contactos</a></li>
+                    <li><a class="menuLinks" href="">Mapa</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <div class="container">
+            <h1 id="title" class="text-center">Formulario</h1>
+            <p id="description" class="description text-center">Breve descripción del formulario</p><br>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name"class="form-control"  placeholder="Ingrese su nombre" required  >
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control"  placeholder="Ingrese su email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad</label>
+                    <input type="number" id="number" min="10" max="99" class="form-control" placeholder="Edad">
+                </div>
+                <div class="form-group">
+                    <p>En esta sección podra escoger su profesión o lo que más le guste</p>
+                    <select name="role" id="dropdown" class="form-control" requerid>
+                        <option disabled selected value>Seleccione opciones</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="profesor">Profesor</option>
+                        <option value="frontEnd">Front-End</option>
+                        <option value="backEnd">Back-End</option>
+                        <option value="analistaDatos">Analista-Datos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Cual de estas tecnologias es tu favorita?</p>
+                    <label>
+                        <input type="radio" name="user-recomend" value="HTML" class="input-radio" checked> HTML
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomend" value="CSS" class="input-radio" checked> CSS
+                    </label>
+                    <label>
+                        <input type="radio" name="user-recomend" value="JS" class="input-radio" checked> JS
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Cual de estas tecnologias utiliza?</p>
+                    <select name="mostLike" id="most-like" class="form-control" requerid>
+                        <option disabled selected value>Seleccione una opcion</option>
+                        <option value="Mysql">MSQL</option>
+                        <option value="mongoDb">Mongo DB</option>
+                        <option value="angular">Angular</option>
+                        <option value="react">React</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Seleccion algunos de estos</p>
+                    <label>
+                        <input type="checkbox" name="visualCode" class="input-checkboxx" value="visual-code">Visual-Code
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="front-end-proyects" >Front-End-Proyects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="back-end-proyects"> Back-End-Proyects
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="visualizacionDatos"> Visualizacion Datos
+                    </label>
+                    <label>
+                        <input type="checkbox" name="prefer" class="input-checkbox" value="blokchain"> Blokchain
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Describa cómo ha resuelto los problemas más dificil que le ha puesto la vida</p>
+                    <textarea class="input-textarea" id="comments" name="comments" cols="60" rows="8" placeholder="Empiece a escribir"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="scriptForm.js"></script>
+    </body>
+    </html> 
