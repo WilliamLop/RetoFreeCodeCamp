@@ -94,12 +94,6 @@ button{
     }
 }
 
-@media (min-width: 576px) {
-    .header {
-        max-width: 540px;
-       
-    }
-}
 @media(min-width:768px){
     .header{
         max-width: 1320px;
@@ -109,11 +103,6 @@ button{
 }
 
 
-
-/* .header{
-    padding: 0 0.625rem;
-    margin-bottom: 1.875rem;
-} */
 
 .description{
     font-style: italic;
@@ -149,7 +138,7 @@ form{
     display: block;
     width: 100%;
     height: 2.375rem;
-    padding: 0.375rem 0.75rem;
+    padding: 0.395rem 0.75rem;
     color: #24ADF3;
     background-color: transparent;
     background-clip: padding-box;
@@ -218,11 +207,14 @@ button:hover{
     box-shadow: 4px 0 15px 2px #663982;
     
 }
+nav ul{
+    margin-left: -62px;
+}
 
 
 nav li{
     display: inline;
-    margin: 50px;    
+    margin: 45px;    
     padding: 10px;
     
 }
@@ -236,8 +228,14 @@ nav li:hover{
 }
 @media(max-width:460px){
     nav li{
-        margin: 3px;
-        padding: 3px;
+        margin: 0;
+        padding: 0 1px 1px 1px;
+    }
+}
+@media(max-width:765.99px){
+    nav li{
+        margin: 11px;
+        
     }
 }
 .menuLinks{
