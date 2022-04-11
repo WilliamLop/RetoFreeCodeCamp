@@ -1,0 +1,158 @@
+html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #010304;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(44, 86, 255);
+}
+
+#navbar > header {
+    color: white;
+}
+
+header {
+    color: #3C9FEB ;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#main-doc  header{
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li{
+    color: #24ADF3;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #D9D9D9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar a:hover{
+    background-color: #D0D6DD;
+    color: #01101B;
+    font-size: 1.2em;
+
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #D0D6DD;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code{
+    display:block;
+    text-align: center;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height:2;
+    font-size: 1.3em;
+    background-color: #D9D9D9;
+    color: #19203D;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px){
+    /*Para celulares*/
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #navbar{
+        background-color: #01111dee;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index:1;
+        border-bottom: 2px solid;
+        text-align: center;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+    #main-doc header{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code{
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+
+}
+footer {
+    margin-top: 30px;
+    background-color: #010304;
+    padding: 20px;
+  }
+  
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #E5E5E5;
+  }
